@@ -20,10 +20,9 @@ h1 {
     background-color: antiquewhite;
     border: solid 2px #212427;
 
-    display: flex;
-    justify-content: flex-start;
+    display: flex; 
     align-items: flex-start;
-    flex-direction: row;
+    flex-direction: row; /*Deixa separado em linhas*/
 }
 
 .filho {
@@ -35,16 +34,20 @@ h1 {
 
 .cor1 {
     background-color: #ED145B;
+    align-self: flex-start; /*Alinha a div para o "ínicio"*/
+    order: 1; /* define a ordem da div */
 }
 
 .cor2 {
     background-color: #63B1BC;
-    align-self: flex-end;
-}
+    align-self: flex-end; /*Alinha a div para o "final"*/
+    order: 3; /* define a ordem da div */
+} 
 
 .cor3 {
     background-color: #EFB661;
-    align-self: center;
+    align-self: center; /*Alinha a div para o "meio"*/
+    order: 2; /* define a ordem da div */
 }
 
 .instrucoes {
